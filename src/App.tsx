@@ -1,33 +1,20 @@
-import ComponentComponent from "./components/ComponentComponent";
 import "./App.css";
-import mac from "./assets/mac.jpg";
+import CompoundWrapper from "./components/CompoundComponent/CompoundWrapper";
+import User from "./components/Hoc/User";
+import WithLoading from "./components/Hoc/WithLoading";
+const UserWithLoading = WithLoading(User);
 const App = () => {
   return (
-    <div className="wrapper">
-      <div className="card">
-        <ComponentComponent.Image src={mac} className="image" />
-        <ComponentComponent.Title className="title">
-          MackBook Pro
-        </ComponentComponent.Title>
-        <ComponentComponent.Price className="price">
-          Price:- $499
-        </ComponentComponent.Price>
-        <ComponentComponent.Button className="button">
-          Add to cart
-        </ComponentComponent.Button>
-      </div>
-      <div className="card">
-        <ComponentComponent.Title className="title">
-          MackBook Pro
-        </ComponentComponent.Title>
-        <ComponentComponent.Price className="price">
-          Price:- $499
-        </ComponentComponent.Price>
-        <ComponentComponent.Image src={mac} className="image" />
-        <ComponentComponent.Button className="button">
-          Add to cart
-        </ComponentComponent.Button>
-      </div>
+    <div className="main">
+      <p className="topic-title">Compound Component</p>
+      <CompoundWrapper />
+      <p className="topic-title">Higher Order Component</p>
+      <UserWithLoading
+        key={null}
+        children={undefined}
+        type={""}
+        props={undefined}
+      />
     </div>
   );
 };

@@ -4,7 +4,11 @@
   padding: 2rem;
   text-align: center;
 }
-
+.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -58,9 +62,9 @@
   font-style: italic;
 }
 .price {
-  background: lightgreen;
+  background: tomato;
   padding: 0rem 1rem;
-  color: black;
+  color: white;
   width: fit-content;
   text-align: center;
 }
@@ -74,4 +78,16 @@
   color: white;
   padding: 0.2rem 1rem;
   width: 100%;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.topic-title {
+  background: lightgreen;
+  padding: 0rem 1rem;
+  color: black;
+  width: fit-content;
+  text-align: center;
 }
