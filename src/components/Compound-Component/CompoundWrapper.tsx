@@ -3,7 +3,7 @@ import mac from "../../assets/mac.jpg";
 
 const CompoundWrapper = () => {
   return (
-    <div className="wrapper">
+    <div className="wrapper flex gap-20">
       <div className="card">
         <ComponentComponent.Image src={mac} className="image" />
         <ComponentComponent.Title className="title">
